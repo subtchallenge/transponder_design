@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data>
+  <loop>false</loop>
+  <repeat_times>1</repeat_times>
+  <repeat_period>500</repeat_period>
+  <frames_list>
+    <frame name="e-stop">
+      <payload>7E00101701000000000000FFFFFFFE034431056F</payload>
+    </frame>
+  </frames_list>
+</data>
