@@ -14,8 +14,8 @@
 The case of the E-Stop transmitter is comprised of two parts: an upper receiver and a lower receiver.  Each receiver houses several components, and the two parts mate together to form the body of the transmitter.
 
 The design files for these parts have been provided in this package:
-- ./CAD/Lower Receiver.stp
-- ./CAD/Upper Receiver.stp
+* ./CAD/Lower Receiver.stp
+* ./CAD/Upper Receiver.stp
   
 These parts are intended to be 3D printed.  The original design allows for printing on a standard desktop FDM 3D printer with a single extruder.  Other printers may be used at your own discretion.
 
@@ -29,15 +29,15 @@ After printing, ensure that all dissolvable or supporting material is fully remo
 
 ## 2. Assembly
 
-**Tools Needed:**
-- Soldering Iron
-- Solder
-- Wire Cutter/Stripper
-- 2mm and 2.5mm Hex Drivers
-- Crescent Wrench
+Tools Needed:
+* Soldering Iron
+* Solder
+* Wire Cutter/Stripper
+* 2mm and 2.5mm Hex Drivers
+* Crescent Wrench
 
 The schematic has been provided in this package:
-- ./Schematic.jpg
+* ./Schematic.jpg
 
 The assembly for the transmitter is relatively complicated due to the dense population of components inside of the upper and lower receivers.  It is recommended that you first place the components into the receivers, follow the schematic, and cut wires to the appropriate lengths.  Keep in mind spacing required for putting the two receiver halves together.
 
