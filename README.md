@@ -56,7 +56,19 @@ Once your PC and Arduino IDE is configured to upload sketches to the Trinket, yo
 
 ## 4. Configuring
 
-Next, you must configure the XBee in the transmitter.  This can be accomplished using Digi's XCTU utility and the XBee configuration file provided in this package.  Plug your XBee into a PC running XCTU through the USB XBee Adapter baord.  Next, use the XCTU configuration uploading tool to upload the configuration to the XBee that will be installed in the transmitter.  Once you upload the configuration to the XBee through XCTU, ensure that the encryption key is set to match your team's supplied private encryption key.
+Next, you must configure the XBee in the transmitter.  This can be accomplished using Digi's XCTU utility and the XBee configuration file provided in this package.
+
+First, download and install the XCTU utility from the [Digi website](https://www.digi.com/products/iot-platform/xctu#productsupport-utilities).  Next, connect the XBee to the computer using the USB Adapter Board.  Connect to the XBee in the XCTU software, and make sure that your working mode in XCTU is set to _Configuration Mode_.  Click on the **Update** button to bring up the Update Firmware dialog.  There is a link in the dialog that says "Can't find your firmware? Click here".  Click that link to bring up a new window, where you can install firmware from a file.  Browse to the `XCTU/firmware.xpro` file included in this package, and install it.
+
+Once the firmware is uploaded, you must load the E-Stop transmitter configuration profile onto the XBee.  In _Configuration Mode_ in XCTU, click on the **Profile button**, followed by **Apply configuration profile** from the drop down.  Browse to the `XCTU/profile.xml` file included in this package, and apply it to the XBee.
+
+Lastly, you must manually set the **Node Identifier (NI)** and **AES Encryption Key (KY)** parameters.  This can also be done in Configuration Mode in XCTU.  In the _Addressing_ group, set the **Node Identifier (NI)** parameter to a unique and relevant name for your team's e-stop transmitter.  Next, under the _Security_ group, change the **AES Encryption Key (KY)** field to match your team's individual encyption key that was assigned to you by DARPA.  This ensures that your e-stop transmitter will be able to communicate with your systems' e-stop receivers.  Don't forget to click the **Write** button to save the new parameters to the XBee.
+
+The XBee is now configured as an E-Stop Transmitter.
+
+### 4.1: Test Configuration
+
+You may quickly test the configuration of your E-Stop Transmitter XBee using XCTU.  Switch to the _Console Mode_ in XCTU, and click on the **Open** button to connect to the Transmitter XBee.  You will notice a _Send Frames_ groupbox in the lower portion of the window.  Click on the **Load** button in this groupbox, and browse to the `XCTU/e-stop_frame.xml` file included in this package.  There will now be a frame titled **e-stop** in the list of available frames to send.  This frame transmits an Emergency Stop signal.  You may select the **e-stop** frame in the list, and click on the **Send Selected Frame** button.  This will immediately transmit an E-Stop command to any E-Stop Receiver XBees that are powered and within line of sight.  You may use this command to test the functionality of both your transmitter and receivers.
 
 ## 5. Operation
 
