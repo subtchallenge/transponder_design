@@ -14,8 +14,8 @@
 The case of the E-Stop transmitter is comprised of two parts: an upper receiver and a lower receiver.  Each receiver houses several components, and the two parts mate together to form the body of the transmitter.
 
 The design files for these parts have been provided in this package:
-* Lower Receiver.stp
-* Upper Receiver.stp
+* `Lower Receiver.stp`
+* `Upper Receiver.stp`
   
 These parts are intended to be 3D printed.  The original design allows for printing on a standard desktop FDM 3D printer with a single extruder.  Other printers may be used at your own discretion.
 
@@ -29,14 +29,19 @@ After printing, ensure that all dissolvable or supporting material is fully remo
 
 ## 2. Assembly
 
-Tools Needed: Soldering Iron + Solder, Wire Cutter/Stripper, 2mm and 2.5mm Hex Drivers, Crescent Wrench
+**Tools Needed:**
+* Soldering Iron
+* Solder
+* Wire Cutter/Stripper
+* 2mm and 2.5mm Hex Drivers
+* Crescent Wrench
 
 The schematic has been provided in this package:
-* Schematic.jpg
+* `Schematic.jpg`
 
 The assembly for the transmitter is relatively complicated due to the dense population of components inside of the upper and lower receivers.  It is recommended that you first place the components into the receivers, follow the schematic, and cut wires to the appropriate lengths.  Keep in mind spacing required for putting the two receiver halves together.
 
-**NOTE:** Before soldering components, if you only have one XBee USB Adapter board, perform the configuration step for the XBee first (Section 4 of this README).  This allows you to configure the XBee using the USB adapter board before soldering and integrating it into the lower receiver.
+**NOTE:** Before soldering components, if you only have one XBee USB Adapter board, perform the configuration step for the XBee first (_Section 4_ of this README).  This allows you to configure the XBee using the USB adapter board before soldering and integrating it into the lower receiver.
 
 Once the wire lengths are measured and cut, remove the components and begin soldering wires and resistors into place using the included schematic.  Be careful that nearby resistors leads are not touching.  It is **VERY IMPORTANT** that you follow the schematic exactly.  If done incorrectly, you may damage one or more of the components.  You may also cause the Lithium Ion rechargeable battery to catch fire.
 
@@ -52,7 +57,7 @@ When attaching the two receivers with the flathead screws, you have the option o
 
 This package includes and Arduino sketch in the form of an INO file.  This file is ready to be uploaded to the trinket via USB.  Adafruit has provided a [step-by-step guide](https://learn.adafruit.com/introducing-pro-trinket/downloads) for configuring a PC and the Arduino IDE to upload sketches to the Trinket.  Please follow these directions **VERY CAREFULLY**.  You must ensure that you choose the 3V version of the board, not the 5V version.  You must also make sure to choose the USBtinyISP as the programmer.  Failure to take these vital steps may brick the Trinket.
 
-Once your PC and Arduino IDE is configured to upload sketches to the Trinket, you may upload the INO file/sketch provided in this package.
+Once your PC and Arduino IDE is configured to upload sketches to the Trinket, you may upload the INO file/sketch provided in this package under `Arduino Code/Transmitter`.
 
 ## 4. Configuring
 
