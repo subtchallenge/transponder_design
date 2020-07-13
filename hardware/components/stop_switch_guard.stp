@@ -10,11 +10,11 @@ FILE_DESCRIPTION(
 
 FILE_NAME(
 /* name */ 
-'C:\\Users\\pcdan\\Projects\\SubT\\Hardware\\EStop\\STEP\\Components\\
-Switch Guard.stp',
-/* time_stamp */ '2019-05-06T13:03:30-04:00',
-/* author */ ('pcdan'),
-/* organization */ (''),
+'C:\\Users\\pcdan\\Projects\\transponder_design_v2\\cad\\components\\s
+top_switch_guard.stp',
+/* time_stamp */ '2020-07-13T09:24:09-04:00',
+/* author */ ('Paul D''Angio'),
+/* organization */ ('DARPA'),
 /* preprocessor_version */ 'ST-DEVELOPER v17.2',
 /* originating_system */ 'Autodesk Inventor 2019',
 /* authorisation */ '');
